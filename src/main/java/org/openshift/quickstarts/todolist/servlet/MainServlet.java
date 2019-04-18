@@ -22,6 +22,10 @@ public class MainServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("##########################################");
+        System.out.println("##          MainServlet    Call    ##");
+        System.out.println("##########################################");
+        System.out.println(" ");
         resp.setContentType("text/html; charset=UTF-8");
         writeHtml(resp.getWriter());
     }

@@ -71,6 +71,6 @@ public class MainServlet extends HttpServlet {
 
         todoListService.addEntry(new TodoEntry(summary, description));
 
-        resp.sendRedirect("http://www-3tier.cloud.sscardpoc.com/index.html");
+        resp.sendRedirect("/index.html");
     }
 }
